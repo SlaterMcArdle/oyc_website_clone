@@ -1,17 +1,18 @@
+import { Typography, Grid, Box, Link } from "@mui/material"
+
 export default function Header() {
     return (
-        <div class="header-wrap">
-            <div class="header-container">
-                <div class="header-logo">
-                    <a href="#">
-                        <img src={process.env.PUBLIC_URL + "/Oceanside_Yacht_Club_Logo_150x79.jpg"} alt="OYC Logo"/>
-                    </a>
-                </div>
-                <div class="header-content">
-                    <div class="header-text">Call Us Today 760-722-5751</div>
-                </div>
-            </div>
-            
-        </div>
+        <Grid container spacing={2} sx={{px: 2}}>
+            <Grid item xs={12} md={6}>
+                <a href="/">
+                    <img src={process.env.PUBLIC_URL + "/Oceanside_Yacht_Club_Logo_150x79.jpg"} alt="OYC Logo"/>
+                </a>
+            </Grid>
+            <Grid item xs={12} md={6}>
+                <Box display='flex' justifyContent={{xs:'center', md: 'flex-end'}} px={10} sx={{height: 1, alignItems: 'center'}}>
+                    <Typography align="right" color="textPrimary">Call Us Today <Link color="inherit" underline="hover" href="tel:760-722-5751" alt="Call 760-722-5751">760-723-5751</Link></Typography>
+                </Box>
+            </Grid>
+        </Grid>
     )
 };

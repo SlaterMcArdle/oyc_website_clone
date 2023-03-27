@@ -1,6 +1,6 @@
 import { createTheme } from '@mui/material/styles';
 
-const theme = createTheme({
+const navTheme = createTheme({
     palette: {
         text: {
             primary: '#006E3A',
@@ -11,10 +11,10 @@ const theme = createTheme({
             fontFamily: 'Helvetica, Verdana, Arial, sans-serif'
         },
         primary: {
-            main: '#000000',
+            main: '#FFFFFF',
             secondary: '#006E3A',
         }
     }
 });
 
-export default theme;
+export default navTheme;
