@@ -14,7 +14,8 @@ const navTheme = createTheme({
             main: '#FFFFFF',
             secondary: '#006E3A',
         }
-    }
+    },
+    spacing: 8
 });
 
 export default navTheme;

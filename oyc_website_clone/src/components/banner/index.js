@@ -21,7 +21,7 @@ let Banner = () => {
                                 </Typography>
                             </Grid>
                             <Grid item>
-                                <Button color="primary" variant="contained">
+                                <Button href="/" color="primary" variant="contained">
                                     <Typography sx={{fontFamily: 'Arial', textTransform: 'none'}} color="#006E3A">Membership Benefits</Typography>
                                 </Button>
                             </Grid>
