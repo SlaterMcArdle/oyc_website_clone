@@ -1,13 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import Home from './pages/home';
-import CalendarPage from './pages/calendar';
+import Activities from './pages/activities';
 import Header from './components/header';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './appStyles';
-import ClubCalendar from './components/calendar';
 
 function App() {
   return (
@@ -15,14 +14,15 @@ function App() {
     // <ThemeProvider theme={theme}>
       <div className="App" style={{minHeight: '500px'}}>
         {/* Universal header and navbar */}
-        {/* <Header /> */}
-        {/* <Navbar /> */}
+        <Header />
+        <Navbar />
+        <Activities />
         {/* Pages */}
         {/* <Home /> */}
-        <ClubCalendar />
+        {/* <ClubCalendar /> */}
         {/* <CalendarPage /> */}
         {/* Universal footer */}
-        {/* <Footer /> */}
+        <Footer />
       </div>
     // </ThemeProvider>
   );
