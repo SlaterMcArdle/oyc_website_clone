@@ -5,16 +5,17 @@ const theme = createTheme({
         text: {
             primary: '#006E3A',
             secondary: '#FFFFFF',
-
-        },
-        typography: {
-            fontFamily: 'Helvetica, Verdana, Arial, sans-serif'
         },
         primary: {
-            main: '#000000',
-            secondary: '#006E3A',
-        }
-    }
+            main: '#006E3A',
+        },
+        secondary: {
+            main: '#FFFFFF',
+        },
+    },
+    typography: {
+        fontFamily: 'Helvetica, Verdana, Arial, sans-serif'
+    },
 });
 
 export default theme;
