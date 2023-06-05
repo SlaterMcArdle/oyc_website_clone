@@ -16,7 +16,6 @@ let Activities = () => {
         <Box>
           <Typography variant={"h2"}>Activities</Typography>
           <List sx={{ listStyleType: "disc", width: "500px" }}>
-            <ListSubheader>Oceanside Yacht Club Activities</ListSubheader>
             <ListItem sx={{ display: "list-item" }}>Junior Program</ListItem>
             <ListItem sx={{ display: "list-item" }}>Racing</ListItem>
             <ListItem sx={{ display: "list-item" }}>OYC Member Events</ListItem>
