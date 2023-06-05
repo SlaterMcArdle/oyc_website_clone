@@ -25,7 +25,6 @@ function App() {
           {/* <CalendarPage /> */}
           {/* Universal footer */}
           <Footer />
-          <p>Testing...</p>
       </div>
     </ThemeProvider>
   );

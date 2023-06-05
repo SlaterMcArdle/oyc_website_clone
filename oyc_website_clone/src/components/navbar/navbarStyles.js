@@ -3,7 +3,7 @@ import { createTheme } from '@mui/material/styles';
 const navTheme = createTheme({
     palette: {
         text: {
-            // primary: '#006E3A',
+            primary: '#006E3A',
             secondary: '#FFFFFF',
 
         },
@@ -11,9 +11,11 @@ const navTheme = createTheme({
             fontFamily: 'Helvetica, Verdana, Arial, sans-serif'
         },
         primary: {
+            main: '#006E3A',
+        },
+        secondary: {
             main: '#FFFFFF',
-            secondary: '#006E3A',
-        }
+        },
     },
     spacing: 8
 });

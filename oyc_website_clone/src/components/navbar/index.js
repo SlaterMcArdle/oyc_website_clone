@@ -29,9 +29,10 @@ let Navbar = () => {
 
     return (
         <ThemeProvider theme={navTheme}>
-            <AppBar position="static" color="primary">
+            <AppBar position="static" color="secondary">
                 <Container maxWidth="x1">
                     <Toolbar>
+                        {/* Mobile & tablet navbar */}
                         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                             <IconButton
                                 size="large"
@@ -76,6 +77,7 @@ let Navbar = () => {
                                     </Menu>
                             </Menu>
                         </Box>
+                        {/* Desktop navbar */}
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'center'}} spacing={2}>
                             {/* {pages.map((page) => (
                             <Button

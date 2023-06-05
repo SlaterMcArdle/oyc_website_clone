@@ -12,7 +12,9 @@ const activitiesTheme = createTheme({
         },
         primary: {
             main: '#006E3A',
-            secondary: '#FFFFFF',
+        },
+        secondary: {
+            main: '#FFFFFF',
         },
         listsubheader: {
             main: '#006E3A',
