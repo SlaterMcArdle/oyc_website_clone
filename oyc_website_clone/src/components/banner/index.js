@@ -11,12 +11,12 @@ let Banner = () => {
                     <ThemeProvider theme={bannerTheme}>
                         <Grid container direciont="column" justifyContent="center" alignItems="center" spacing={3}>
                             <Grid item>
-                                <Typography variant="h2" color="white">
+                                <Typography variant="h2" color="white" sx={{textShadow: "-2px 2px 2px #000;"}}>
                                     Welcome to Oceanside Yacht Club
                                 </Typography>
                             </Grid>
                             <Grid item xs={12}>
-                                <Typography variant="h4" color="white">
+                                <Typography variant="h4" color="white" sx={{textShadow: "-2px 2px 2px #000;"}}>
                                     Yachting & Sailing At Its Finest
                                 </Typography>
                             </Grid>

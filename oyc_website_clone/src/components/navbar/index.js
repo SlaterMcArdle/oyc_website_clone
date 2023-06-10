@@ -198,6 +198,10 @@ let Navbar = () => {
   //   #endregion
 
   const handleNavToggle = (event) => {
+    setRaceDropOpen(false);
+    setJuniorDropOpen(false);
+    setActivitiesDropOpen(false);
+    setAboutDropOpen(false);
     setNavOpen((prevNavOpen) => !prevNavOpen);
   };
 
@@ -254,7 +258,12 @@ let Navbar = () => {
         <Container maxWidth="x1">
           <Toolbar sx={{ height: "4rem" }}>
             {/* Mobile & tablet navbar */}
-            <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+            <Box sx={{ 
+                flexGrow: 1, 
+                display: { xs: "flex", md: "none" },
+                height: "100%"
+              }}
+            >
               <IconButton
                 size="large"
                 aria-controls={raceOpen ? "nav-menu" : undefined}
@@ -271,6 +280,7 @@ let Navbar = () => {
               role={undefined}
               placement="bottom-start"
               transition
+              sx={{minWidth: "325px", maxWidth: "100vw !important", zIndex: 10}}
               >
                 {({ TransitionProps, placement }) => (
                   <Grow
@@ -302,6 +312,7 @@ let Navbar = () => {
                             in={raceDropOpen}
                             timeout="auto"
                             unmountOnExit
+                            sx={{backgroundColor: "#EFEFEF"}}
                           >
                             <MenuItem
                               component={Link}
@@ -347,6 +358,7 @@ let Navbar = () => {
                             in={juniorDropOpen}
                             timeout="auto"
                             unmountOnExit
+                            sx={{backgroundColor: "#EFEFEF"}}
                           >
                             <MenuItem
                               component={Link}
@@ -410,6 +422,7 @@ let Navbar = () => {
                             in={activitiesDropOpen}
                             timeout="auto"
                             unmountOnExit
+                            sx={{backgroundColor: "#EFEFEF"}}
                           >
                             <MenuItem
                               component={Link}
@@ -444,6 +457,7 @@ let Navbar = () => {
                             in={aboutDropOpen}
                             timeout="auto"
                             unmountOnExit
+                            sx={{backgroundColor: "#EFEFEF"}}
                           >
                             <MenuItem
                               component={Link}

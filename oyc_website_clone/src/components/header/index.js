@@ -9,8 +9,8 @@ export default function Header() {
                 </a>
             </Grid>
             <Grid item xs={12} md={6}>
-                <Box display='flex' justifyContent={{xs:'center'}} px={10} sx={{height: 1, alignItems: 'center'}}>
-                    <Typography align="right">Call Us Today <Link underline="hover" href="tel:760-722-5751" alt="Call 760-722-5751">760-723-5751</Link></Typography>
+                <Box display='flex' justifyContent={{xs:'center'}} px={{xs: 0, md:10}} sx={{height: 1, alignItems: 'center'}}>
+                    <Typography align="right">Call Us Today <Link underline="hover" href="tel:760-722-5751" alt="Call 760-722-5751">760-722-5751</Link></Typography>
                 </Box>
             </Grid>
         </Grid>
