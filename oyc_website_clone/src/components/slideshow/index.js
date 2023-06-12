@@ -11,8 +11,13 @@ let Slideshow = (props) => {
     },
     {
       image:
-        "https://oceansideyc.net/wp-content/uploads/2023/06/2023-06-02_Bingo_Night.jpg",
-      description: "Oceanside Yacht club Bingo Night",
+        "https://oceansideyc.net/wp-content/uploads/2023/06/2023-06-02_Taco_Thursday.jpg",
+      description: "Oceanside Yacht club Taco Night",
+    },
+    {
+      image:
+        "https://oceansideyc.net/wp-content/uploads/2023/05/2023-05-16_Flag_Day.jpg",
+      description: "National Flag Day",
     },
   ];
 
