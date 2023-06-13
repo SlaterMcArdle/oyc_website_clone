@@ -1,0 +1,8 @@
+.hoursImage {
+    width: 100%;
+    max-width: 700px;
+    height: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    object-position: center;
+}

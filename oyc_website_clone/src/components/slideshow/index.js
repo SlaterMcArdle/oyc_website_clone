@@ -23,54 +23,60 @@ let Slideshow = (props) => {
 
   return (
     <Grid container className="slideShowContainer">
-        <Grid xs></Grid>
-        <Grid xs={10} md={6} xl={5}>
-            <Carousel height="400px" sx={{ maxWidth: "100vw" }}>
-            {items.map((item, i) => (
-                <Slide key={i} item={item} />
-            ))}
-            </Carousel>
-        </Grid>
-        <Grid xs></Grid>
-        
+      <Grid xs></Grid>
+      <Grid xs={10} md={8} lg={11}>
+        <Carousel height="400px" sx={{ maxWidth: "100vw" }}>
+          {items.map((item, i) => (
+            <Slide key={i} item={item} />
+          ))}
+        </Carousel>
+      </Grid>
+      <Grid xs></Grid>
     </Grid>
   );
 };
 
 let Slide = (props) => {
   return (
-    <div style={{ height: "400px", position: "relative" }}>
-      <Paper>
-        <Grid container spacing={0}>
-          <Grid item xs>
-            <div className="blurContainer">
+    <div>
+      <Typography variant="h4" sx={{ textAlign: "center" }}>Upcoming Events</Typography>
+      <div class="slideShow" style={{ height: "400px", position: "relative" }}>
+        <Paper>
+          <Grid container spacing={0}>
+            <Grid item xs>
+              <div className="blurContainer">
+                <img
+                  className="blurredLeft"
+                  src={props.item.image}
+                  alt={props.item.description}
+                  style={{ objectFit: "fill", maxHeight: "400px" }}
+                />
+              </div>
+            </Grid>
+            <Grid item xs="auto">
               <img
-                className="blurredLeft"
                 src={props.item.image}
                 alt={props.item.description}
-                style={{ objectFit: "fill", maxHeight: "400px" }}
+                style={{
+                  objectFit: "contain",
+                  maxHeight: "400px",
+                  maxWidth: "100%",
+                }}
               />
-            </div>
+            </Grid>
+            <Grid item xs>
+              <div className="blurContainer">
+                <img
+                  className="blurredRight"
+                  src={props.item.image}
+                  alt={props.item.description}
+                  style={{ objectFit: "fill", maxHeight: "400px" }}
+                />
+              </div>
+            </Grid>
           </Grid>
-          <Grid item xs="auto">
-            <img
-              src={props.item.image}
-              alt={props.item.description}
-              style={{ objectFit: "contain", maxHeight: "400px", maxWidth: "100%" }}
-            />
-          </Grid>
-          <Grid item xs>
-            <div className="blurContainer">
-              <img
-                className="blurredRight"
-                src={props.item.image}
-                alt={props.item.description}
-                style={{ objectFit: "fill", maxHeight: "400px" }}
-              />
-            </div>
-          </Grid>
-        </Grid>
-      </Paper>
+        </Paper>
+      </div>
     </div>
   );
 };
