@@ -254,7 +254,7 @@ let Navbar = () => {
 
   return (
     <ThemeProvider theme={navTheme}>
-      <AppBar position="static" color="secondary" sx={{ height: "4rem" }}>
+      <AppBar position="sticky" color="secondary" sx={{ height: "4rem"}}>
         <Container maxWidth="x1">
           <Toolbar sx={{ height: "4rem" }}>
             {/* Mobile & tablet navbar */}
